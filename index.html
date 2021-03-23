@@ -10,34 +10,36 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
-  <header class="main-header">
-    <img src="images/logo.svg" class="logo" alt="Page logo">
-  </header>
-
-  <div class="image-container">
-    <picture class="picture">
-      <source srcset="images/hero-desktop.jpg" media="(min-width: 768px)">
-      <img src="images/hero-mobile.jpg" alt="Hero image">
-    </picture>
+  <div class="grid-container">
+    <header class="main-header">
+      <img src="images/logo.svg" class="logo" alt="Page logo">
+    </header>
+  
+    <div class="image-container">
+      <picture class="picture">
+        <source srcset="images/hero-desktop.jpg" media="(min-width: 1280px)">
+        <img src="images/hero-mobile.jpg" alt="Hero image">
+      </picture>
+    </div>
+  
+    <main class="main">
+      <section class="section">
+        <h1 class="main-title">We're <span>coming soon</span></h1>
+        <p class="paragraph">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form class="form">
+          <div class="form-field" id="email-form-field">
+            <input type="email" name="email" id="email" class="input" placeholder="Email Address">
+            <button class="button form-submit">
+              <img src="images/icon-arrow.svg" alt="Form submit arrow button">
+            </button>
+            <p class="form-message">Please provide a valid email</p>
+          </div>
+        </form>
+      </section>
+    </main>
   </div>
-
-  <main class="main">
-    <section class="section">
-      <h1 class="main-title">We're <span>coming soon</span></h1>
-      <p class="paragraph">
-        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-      </p>
-      <form class="form">
-        <div class="form-field" id="email-form-field">
-          <input type="email" name="email" id="email" class="input" placeholder="Email Address">
-          <button class="button form-submit">
-            <img src="images/icon-arrow.svg" alt="Form submit arrow button">
-          </button>
-          <p class="form-message">Please provide a valid email</p>
-        </div>
-      </form>
-    </section>
-  </main>
 
   <script src="javascripts/app.js"></script>
 </body>
