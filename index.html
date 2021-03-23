@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <img src="images/logo.svg" alt="Page logo">
+  </header>
+
+  <div class="image-container">
+    <picture class="picture">
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 768px)">
+      <img src="images/hero-mobile.jpg" alt="Hero image">
+    </picture>
+  </div>
+
+  <main class="main">
+    <section class="section">
+      <h1 class="main-title">We're <span>coming soon</span></h1>
+      <p class="paragraph">
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form class="form">
+        <div class="form-field">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <button class="button form-submit">
+            <img src="images/icon-arrow.svg" alt="Form submit arrow button">
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
